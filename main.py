@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 
 import torch
 from diffusers import StableDiffusionPipeline
-from transformers import T5Tokenizer, T5ForConditionalGeneration
+#from transformers import T5Tokenizer, T5ForConditionalGeneration
 
 import base64
 from io import BytesIO
