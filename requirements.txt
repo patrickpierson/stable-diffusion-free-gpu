@@ -7,5 +7,5 @@ transformers
 scipy
 ftfy
 accelerate
-pyngrok==4.1.1
+pyngrok==6.0.0
 flask_ngrok
