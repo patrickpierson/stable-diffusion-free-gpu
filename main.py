@@ -16,7 +16,7 @@ pipe = StableDiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5",
 pipe.to("cuda")
 
 def dummy(images, **kwargs):
-  return iamges, False
+  return images, False
 
 pipe.safety_checker = dummy
 
