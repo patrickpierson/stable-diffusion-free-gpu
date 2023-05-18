@@ -15,6 +15,10 @@ from io import BytesIO
 pipe = StableDiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5", revision="fp16", torch_dtype=torch.float16)
 pipe.to("cuda")
 
+def dummy(images, **kwargs):
+  return iamges, False
+
+pipe.safety_checker = dummy
 
 # Start flask app and set to ngrok
 app = Flask(__name__)
