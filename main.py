@@ -13,8 +13,7 @@ from io import BytesIO
 #model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-small").to("cuda")
 
 pipe = StableDiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5", revision="fp16", torch_dtype=torch.float16)
-#pipe.to("cuda")
-pipe.to("cpu")
+pipe.to("cuda")
 
 
 # Start flask app and set to ngrok
